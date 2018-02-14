@@ -1,0 +1,23 @@
+{
+  "name": "martina-luther",
+  "authors": [
+    "Sahana Shelly <sahana.shelly@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "boostrap": "bootstrap#^4.0.0",
+    "jquery": "^3.3.1",
+    "fontawesome": "^5.0.6",
+    "isotope-layout": "isotope#^3.0.5"
+  }
+}

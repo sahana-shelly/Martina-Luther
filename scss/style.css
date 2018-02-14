@@ -1,0 +1,594 @@
+/* ===================================
+   01. Main Styles
+====================================== */
+body {
+  font-family: "Poppins", "Open Sans";
+  font-size: 14px;
+  font-weight: 400px;
+  margin: 0;
+  padding: 0;
+  line-height: 24px; }
+
+/* ===================================
+    02. Typography
+====================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Open Sans"; }
+
+.title {
+  padding-bottom: 40px;
+  padding-top: 70px; }
+
+.title h2 {
+  text-align: center;
+  font-weight: 400px;
+  position: relative;
+  margin-bottom: 40px; }
+
+.title h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  left: 48%;
+  margin-top: 10px;
+  display: block;
+  background-color: black;
+  color: #f34236;
+  text-align: center;
+  font-weight: bold; }
+
+/* ===================================
+    0403. . Header 
+====================================== */
+#header {
+  width: 100%; }
+
+nav.navbar.navbar-inverse.navbar-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%; }
+
+.logo a.navbar-brand {
+  margin-top: 12px;
+  color: #f34236;
+  font-size: 29px;
+  font-weight: bold; }
+
+.logo a.navbar-brand:hover {
+  color: #f34236; }
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: none;
+  border: 1px solid transparent; }
+
+.navbar-inverse {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+
+.navbar-nav > li > a {
+  padding-top: 40px;
+  padding-bottom: 15px; }
+
+.navbar-inverse .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  margin-top: -15px;
+  font-weight: 700;
+  margin-right: 8px; }
+
+a {
+  color: black; }
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  color: #f34236;
+  background-color: transparent; }
+
+a:hover {
+  color: #f34236; }
+
+.navbar-inverse .navbar-nav > li > a.active {
+  background-color: #f34236;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 14px;
+  border-radius: 37px; }
+
+.filter-btns.active {
+  color: black;
+  text-decoration: line-through; }
+
+nav navbar-nav navbar-right li a {
+  color: black; }
+
+#header.positionFixed {
+  position: fixed;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: black;
+  height: 74px;
+  z-index: 9999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/* ===================================
+      banner area  
+====================================== */
+.welcome-area {
+  background-image: url(../img/bg1.jpg);
+  position: relative;
+  max-width: 100%;
+  min-height: 690px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
+.welcome-text {
+  margin-top: 250px;
+  text-align: center; }
+
+.welcome-text h3 {
+  color: #f34236;
+  font-size: 48px;
+  font-weight: bold; }
+
+.welcome-text h2 {
+  color: white;
+  font-size: 68px;
+  font-weight: 900;
+  margin-bottom: 20px; }
+
+.welcome-text p {
+  color: #f34236;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 70px; }
+
+a.welcome-button {
+  text-transform: uppercase;
+  padding: 12px 48px;
+  background-color: #f34236;
+  color: white;
+  font-size: 30px;
+  border-radius: 37px;
+  margin-top: 14px;
+  text-decoration: none; }
+
+/* ===================================
+      04. ABOUT AREA CSS
+====================================== */
+section#about {
+  margin-top: 70px;
+  background-color: white;
+  max-width: 100%;
+  min-height: 550px; }
+
+section#about img {
+  width: 100%;
+  height: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+h2 {
+  font-size: 33px;
+  font-weight: 700; }
+
+h2 > span {
+  color: #f34236; }
+
+section#about p {
+  font-size: 14px; }
+
+.about-social-icon {
+  display: inline-block;
+  margin-bottom: 50px; }
+
+.about-social-icon ul li {
+  float: left;
+  list-style: none; }
+
+.about-social-icon ul li a i {
+  background-color: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 100%;
+  margin: 5px;
+  text-align: center;
+  margin: 5;
+  padding-top: 12px;
+  transition: 0.2s linear; }
+
+.about-social-icon ul li a i:hover {
+  background-color: #f34236;
+  color: black; }
+
+.about-button {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.about-button > a {
+  padding: 12px 20px;
+  background-color: #f34236; }
+
+.about-button > a {
+  padding: 12px 40px;
+  background-color: #f34236;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px; }
+
+.about-button > a:hover {
+  border-radius: 10px; }
+
+/* ===================================
+     05. SERVICE AREA CSS
+====================================== */
+section#service {
+  background-color: #f3f3f3;
+  padding-bottom: 70px; }
+
+.service-box {
+  padding: 30px 50px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+section#service p {
+  text-align: center;
+  font-size: 14px; }
+
+section#service i {
+  display: block;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-color: #f34236;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 42px;
+  border-radius: 50%;
+  margin-top: 30px; }
+
+section#service h3 {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 23px; }
+
+/* ===================================
+      06.RESUME AREA CSS
+====================================== */
+section#resume {
+  max-width: 100%;
+  height: auto;
+  background-color: white; }
+
+.resume-group p {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.resume-group {
+  max-width: 100%;
+  height: auto;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.resume-group h4 {
+  color: #f34236;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 50px; }
+
+.resume-group h5 {
+  font-size: 22px;
+  font-weight: 500; }
+
+/* ===================================
+      HIRE AREA CSS
+====================================== */
+.hire-area {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  background-color: #f34236;
+  color: white;
+  padding-top: 50px;
+  margin-top: 70px; }
+
+.hire-area h2 {
+  padding-bottom: 30px; }
+
+.hire-area a {
+  padding: 14px 43px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 37px;
+  font-size: 22px;
+  text-transform: uppercase; }
+
+.hire-area a:hover {
+  border-radius: 10px; }
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  /* font-weight: 700; */
+  font-size: 14px; }
+
+/* ===================================
+     07. WORK AREA CSS
+====================================== */
+#filters-ul-outer {
+  padding-bottom: 60px;
+  padding-left: 32%; }
+
+ul#filters-ul > li.filter-item {
+  list-style: none;
+  float: left; }
+
+ul#filters-ul > li.filter-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  margin: 10px; }
+
+ul#filters-ul > li.filter-item a:hover {
+  color: #f34236; }
+
+div#filters-ul-outer > ul#filters-ul > li.filter-item > a.cpp-btns.active {
+  color: #f34236; }
+
+.portfolio {
+  position: relative;
+  width: 100%;
+  margin: -30px; }
+
+.image {
+  opacity: 1;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.box {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8); }
+
+.portfolio:hover .image {
+  opacity: 0.3; }
+
+.portfolio:hover .box {
+  width: 100%;
+  height: 240px;
+  left: 61%;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0.6;
+  border-radius: 10px; }
+
+.box h4 {
+  color: white;
+  margin-top: 45px;
+  margin-left: 45px; }
+
+.box a {
+  text-decoration: none;
+  padding: 8px 30px;
+  background-color: #f34236;
+  margin-left: 45px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 37px; }
+
+.image img:hover .box {
+  width: 100%;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8); }
+
+/* ===================================
+     08. BLOG AREA CSS
+====================================== */
+.blog-group {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 40px;
+  border-radius: 10px; }
+
+.blog-group img {
+  width: 100%;
+  height: 240px; }
+
+.blog-group h3 {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 18px; }
+
+.blog-group label {
+  margin-left: 10px; }
+
+.blog-group p {
+  font-size: 14px;
+  margin-left: 10px; }
+
+.blog-action {
+  margin-top: 50px; }
+
+.blog-action a {
+  text-decoration: none;
+  padding: 11px 20px;
+  background-color: #f34236;
+  margin-left: 10px;
+  /* margin-top: 30px; */
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 37px;
+  color: white; }
+
+/* ===================================
+     09. CONTACT AREA CSS
+====================================== */
+section#contact {
+  margin-bottom: 70px; }
+
+section#contact form {
+  width: 100%;
+  height: 440px;
+  padding-top: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  /* background-image: none; */
+  border-radius: 4px;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-bottom-style: solid;
+  border-width: 2px; }
+
+.form-submit {
+  margin-top: 50px; }
+
+.form-submit a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding: 17px 31px;
+  border-radius: 37px;
+  background-color: #f34236;
+  color: white;
+  font-size: 16px;
+  font-weight: 700; }
+
+.form-submit a:hover {
+  border-radius: 10px; }
+
+.form-addess {
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.form-addess h4 {
+  font-weight: 700;
+  padding-top: 20px; }
+
+.form-addess p {
+  font-size: 14px; }
+
+.address-link a {
+  font-size: 15px;
+  color: #f34236;
+  padding-right: 5px; }
+
+.form-addess i {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  border-radius: 37px;
+  margin: 20px 20px; }
+
+/* ===================================
+    10.  FOOTER AREA CSS
+====================================== */
+footer#footer {
+  background-color: #121212;
+  width: 100%;
+  padding: 0px; }
+
+footer#footer h2 {
+  text-align: center;
+  color: white;
+  margin-top: 35px; }
+
+.footer-social-icon {
+  width: 290px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 30px; }
+
+.footer-social-icon ul li {
+  float: left;
+  list-style: none; }
+
+.footer-social-icon ul li a i {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 37px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  margin: 5px;
+  transition: 0.2s linear; }
+
+.footer-social-icon ul li a i:hover {
+  background-color: #f34236;
+  color: white; }
+
+.sub-footer {
+  background: #171717;
+  color: #999;
+  padding: 20px; }
+
+.sub-footer h2 {
+  font-size: 14px;
+  margin-top: -30px; }
+
+/*# sourceMappingURL=style.css.map */
